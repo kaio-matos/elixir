@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./.docker/dev/Dockerfile
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
